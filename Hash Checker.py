@@ -15,7 +15,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # ← Your VirusTotal API key
-API_KEY = "put you api key here"
+API_KEY = input("Enter your Virus Total API Key: ").strip()
 
 # Use absolute paths for files
 INPUT_FILE = os.path.join(BASE_DIR, "hashes.txt")
